@@ -1,0 +1,136 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.dark-theme{
+
+    --primary-color:#000000;
+    --secondary-color:#727d94;
+}
+:root{
+    --primary-color:#727d94;
+    --secondary-color:#212121;
+}
+
+
+
+#icon{
+    width: 30px;
+    cursor: pointer;
+}
+nav ul{
+    flex: 1;
+    text-align: right;
+}
+
+.hero{
+    height: 100vh;
+    width: 100%;
+    background:var(--primary-color);
+    font-family: sans-serif;
+    position: relative;
+}
+nav{
+    width: 95%;
+    margin: auto;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: .5px solid black;
+
+}
+
+.logo{
+    width: 100px;
+    cursor: pointer;
+    padding-left: 30px;
+
+}
+
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color:var(--secondary-color);
+}
+nav ul li a:hover{
+    color: #c90707;
+}
+
+.info{
+    margin-left: 60px;
+    margin-top: 15px;
+}
+
+.info h1{
+    font-size: 70px;
+    color:var(--secondary-color);
+    margin-bottom: 20px;
+}
+span{
+    color:#cb0e0a;
+}
+
+.info p{
+    color:var(--secondary-color);
+    line-height: 22px;
+
+}
+.info a{
+    background-color:var(--secondary-color);
+    padding: 10px 18px;
+    text-decoration: none;
+    color:var(--primary-color);
+    display: inline-block;
+    margin: 30px 0px;
+    border-radius: 20px;
+
+}
+.img-box{
+    width: 44%;
+    height: 80%;
+    position: absolute;
+    bottom: 0;
+    right: 100px;
+
+}
+.img-box img{
+    height: 100%;
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translate(-50%);
+    transition: bottom 1s,left 1s;
+}
+.img-box:hover .back-img{
+    bottom: 40px;
+}
+
+.img-box:hover .main-img{
+    left:54%;
+   
+}
+
+.main-img{
+    width: 600px;
+}
+
+.social-links{
+    margin-left:4% ;
+    margin-top: 15px;
+}
+.social-links a{
+    font-size: 30px;
+    color:var(--secondary-color);
+    margin-right: 20px;
+}
+
+.social-links a:hover{
+    color: #ff4321;
+}
